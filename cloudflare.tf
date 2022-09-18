@@ -54,3 +54,11 @@ resource "cloudflare_record" "fa" {
   type    = "CNAME"
   proxied = true
 }
+
+resource "cloudflare_record" "united-games" {
+  zone_id = var.zone_id
+  name    = "united-games"
+  value   = "harryemartland.github.io"
+  type    = "CNAME"
+  proxied = true
+}
