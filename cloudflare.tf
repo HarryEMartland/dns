@@ -30,3 +30,27 @@ resource "cloudflare_record" "home" {
   type    = "AAAA"
   proxied = true
 }
+
+resource "cloudflare_record" "home" {
+  zone_id = var.zone_id
+  name    = "router"
+  value   = "192.168.1.1"
+  type    = "A"
+  proxied = false
+}
+
+resource "cloudflare_record" "harrymartland-co-uk" {
+  zone_id = var.zone_id
+  name    = "harrymartland.co.uk"
+  value   = "185.199.111.153"
+  type    = "A"
+  proxied = true
+}
+
+resource "cloudflare_record" "fa" {
+  zone_id = var.zone_id
+  name    = "fa"
+  value   = "harryemartland.github.io"
+  type    = "CNAME"
+  proxied = true
+}
