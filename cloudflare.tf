@@ -31,7 +31,7 @@ resource "cloudflare_record" "home" {
   proxied = true
 }
 
-resource "cloudflare_record" "home" {
+resource "cloudflare_record" "router" {
   zone_id = var.zone_id
   name    = "router"
   value   = "192.168.1.1"
