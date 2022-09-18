@@ -23,7 +23,7 @@ variable "domain" {
   default = "harrymartland.co.uk"
 }
 
-resource "cloudflare_record" "www" {
+resource "cloudflare_record" "home" {
   zone_id = var.zone_id
   name    = "home"
   value   = "2a01:4b00:d002:b601:8ee8:1241:9013:c2da"
