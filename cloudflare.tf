@@ -28,7 +28,7 @@ resource "cloudflare_record" "home" {
   name    = "home"
   value   = "2a01:4b00:d002:b601:8ee8:1241:9013:c2da"
   type    = "AAAA"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "router" {
