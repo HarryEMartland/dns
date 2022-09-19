@@ -26,7 +26,7 @@ variable "domain" {
 resource "cloudflare_record" "home" {
   zone_id = var.zone_id
   name    = "home"
-  value   = "2a01:4b00:d002:b601:8ee8:1241:9013:c2da"
+  value   = "2a01:4b00:d002:b601:8339:6522:7a06:6657"
   type    = "AAAA"
   proxied = true
 }
