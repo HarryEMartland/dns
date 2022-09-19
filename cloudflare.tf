@@ -29,7 +29,7 @@ resource "cloudflare_record" "home" {
   value   = "2a01:4b00:d002:b601:8339:6522:7a06:6657"
   type    = "AAAA"
   ttl = "60"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "router" {
