@@ -28,15 +28,6 @@ resource "cloudflare_record" "home" {
   name    = "home"
   value   = "2a01:4b00:d002:b601:8339:6522:7a06:6657"
   type    = "AAAA"
-  ttl     = "60"
-  proxied = false
-}
-
-resource "cloudflare_record" "homePrx" {
-  zone_id = var.zone_id
-  name    = "proxy.home"
-  value   = "2a01:4b00:d002:b601:8339:6522:7a06:6657"
-  type    = "AAAA"
   proxied = true
 }
 
