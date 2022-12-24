@@ -45,7 +45,7 @@ resource "cloudflare_record" "harrymartland-co-uk" {
   name    = "harrymartland.co.uk"
   value   = "185.199.111.153"
   type    = "A"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "fa" {
@@ -53,7 +53,7 @@ resource "cloudflare_record" "fa" {
   name    = "fa"
   value   = "harryemartland.github.io"
   type    = "CNAME"
-  proxied = true
+  proxied = false
 }
 
 resource "cloudflare_record" "united-games" {
@@ -61,5 +61,5 @@ resource "cloudflare_record" "united-games" {
   name    = "united-games"
   value   = "harryemartland.github.io"
   type    = "CNAME"
-  proxied = true
+  proxied = false
 }
