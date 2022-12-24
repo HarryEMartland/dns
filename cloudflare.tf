@@ -51,8 +51,8 @@ resource "cloudflare_record" "harrymartland-co-uk" {
 resource "cloudflare_record" "www-harrymartland-co-uk" {
   zone_id = var.zone_id
   name    = "www.harrymartland.co.uk"
-  value   = "185.199.111.153"
-  type    = "A"
+  value   = "harryemartland.github.io"
+  type    = "CNAME"
   proxied = false
 }
 
