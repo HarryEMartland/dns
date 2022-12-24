@@ -48,6 +48,14 @@ resource "cloudflare_record" "harrymartland-co-uk" {
   proxied = false
 }
 
+resource "cloudflare_record" "www-harrymartland-co-uk" {
+  zone_id = var.zone_id
+  name    = "www.harrymartland.co.uk"
+  value   = "185.199.111.153"
+  type    = "A"
+  proxied = false
+}
+
 resource "cloudflare_record" "fa" {
   zone_id = var.zone_id
   name    = "fa"
